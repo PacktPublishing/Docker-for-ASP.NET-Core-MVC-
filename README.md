@@ -18,7 +18,6 @@ This course supplies in-depth content that puts the theory into practice. It wil
 
 If you are a programmer looking for quick, handy guide to help you implement Docker in your .Net application, then this course is all you need. An understanding of Docker concepts would be helpful, but itâ€™s not necessary to get started with this video.	
 
-...
 
 ## Related Products
 * [Dockerization - Do more with Docker [Integrated Course]](https://www.packtpub.com/virtualization-and-cloud/dockerization-do-more-docker-integrated-course?utm_source=github&utm_medium=repository&utm_campaign=9781788394857)
