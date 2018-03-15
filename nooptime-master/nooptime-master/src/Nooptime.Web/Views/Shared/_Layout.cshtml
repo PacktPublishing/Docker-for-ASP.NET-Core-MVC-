@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>@ViewData["Title"] - Nooptime</title>
+	<link rel="icon" href="~/favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://bootflat.github.io/bootflat/css/bootflat.css">
+	<link href="/css/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
+	<style>
+		table { font-size:12px; }
+
+		.container {
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			color: #2c3e50;
+		}
+	
+		.bounce-enter-active {
+			animation: bounce-in 0.5s;
+		}
+	
+		.bounce-leave-active {
+			animation: bounce-in 0.5s reverse;
+		}
+	
+		@@keyframes bounce-in {
+			0% {
+				transform: scale(0);
+			}
+			50% {
+				transform: scale(1.5);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+		</style>
+
+</head>
+
+<body>
+	<div class="container">
+			<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-sm">
+				<div class="modal-content">
+				  <form>
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter email">
+						<small id="emailHelp" class="form-text text-muted">The name of the check.</small>
+					</div>
+					</form>
+				</div>
+			  </div>
+			</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h1>
+					<img src="~/images/nooptime-icon.svg">&nbsp; nooptime
+				</h1>
+			</div>
+			<div class="col-md-12">
+				<nav style="background-color: rgb(72, 81, 90); border-radius: 5px;padding:10px; font-size:14px;">
+					<a href="~/Home/Status" id="navitem-status">Status</a>
+					<a href="~/Home/Manage" id="navitem-manage" style="margin-left:10px">Manage</a>
+					<a href="~/Home/Activity" id="navitem-activity" style="margin-left:10px">Activity</a>
+				</nav>
+			</div>
+			<div class="col-md-12">
+				&nbsp;
+			</div>
+			<div class="col-md-12">
+				<!-- Bootstrap -->
+				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+				<!-- Bootflat's JS files.-->
+				<script src="https://bootflat.github.io/bootflat/js/icheck.min.js"></script>
+				<script src="https://bootflat.github.io/bootflat/js/jquery.fs.selecter.min.js"></script>
+				<script src="https://bootflat.github.io/bootflat/js/jquery.fs.stepper.min.js"></script> @RenderBody()
+
+				<script src="~/dist/services.js" asp-append-version="true"></script>
+
+				@RenderBody()
+				
+				<hr />
+				<footer>
+					<p>&copy; 2017</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

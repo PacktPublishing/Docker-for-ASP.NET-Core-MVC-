@@ -1,0 +1,11 @@
+﻿FROM microsoft/dotnet
+MAINTAINER Chris Small for Packt
+
+RUN mkdir /app
+COPY ./bin/Release/netcoreapp2.0/publish /app
+WORKDIR /app
+
+ENTRYPOINT ["dotnet", "/app/Packt.HelloWorld.dll"]
+
+# ASP.NET Core: Kestrel should listen on all IPs
+ENV ASPNETCORE_URLS="http://0.0.0.0:5000"
