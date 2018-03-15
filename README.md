@@ -8,10 +8,10 @@ This course supplies in-depth content that puts the theory into practice. It wil
 <H2>What You Will Learn</H2>
 <DIV class=book-info-will-learn-text>
 <UL>
-<LI>Learn core concepts of machine learning 
-<LI>Learn about different types of machine learning algorithms 
-<LI>Build real-world projects using supervised and unsupervised learning algorithms 
-<LI>Learn to implement neural networks </LI></UL></DIV>
+<LI>Explore the Docker commands to use for your application
+<LI>Build Container images with the docker command line 
+<LI>Explore the Dockerfile and docker build
+<LI>Customize the dockerfile in your .net application </LI></UL></DIV>
 
 ## Instructions and Navigation
 ### Assumed Knowledge
