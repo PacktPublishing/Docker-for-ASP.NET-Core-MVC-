@@ -11,7 +11,13 @@ This course supplies in-depth content that puts the theory into practice. It wil
 <LI>Explore the Docker commands to use for your application
 <LI>Build Container images with the docker command line 
 <LI>Explore the Dockerfile and docker build
-<LI>Customize the dockerfile in your .net application </LI></UL></DIV>
+<LI>Customize the dockerfile in your .net application 
+  <LI> Tag and run your first Docker image
+  <LI> Write a build script to make your .NET core application data-driven and robust
+    <LI>Debug images into a container using Visual Studio
+      <LI> Use the kops tool to create a Kubernetes cluster in AWS
+        <LI> Deploy an image with kubectl in your application 
+    </LI></UL></DIV>
 
 ## Instructions and Navigation
 ### Assumed Knowledge
